@@ -1,5 +1,5 @@
 ---
 - hosts: all
   roles:
-    - ansible-ksplice
+    - ansible-role-ksplice
 
