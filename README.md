@@ -1,3 +1,5 @@
+[![Travis](https://img.shields.io/travis/mmckinst/ansible-role-ksplice.svg)](https://travis-ci.org/mmckinst/ansible-role-ksplice)
+
 License
 ---
 ```
