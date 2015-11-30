@@ -27,7 +27,7 @@ Vagrant.configure(2) do |config|
 
 
   config.vm.provision "ansible" do |ansible|
-    ansible.playbook = "playbook.yml"
+    ansible.playbook = "tests/test.yml"
     ansible.raw_arguments = ['-e', '@secrets.yml']
     ansible.sudo = true
   end
