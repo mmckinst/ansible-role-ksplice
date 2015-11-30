@@ -1,5 +1,14 @@
 ---
 - hosts: all
+  pre_tasks:
+    - name: Install dnf-yum package
+      dnf: name=yum state=present
+      when: ansible_distribution == 'Fedora'
+    - name: Install gnupg package
+      yum: name=gnupg state=present
+      when: ansible_distribution == 'Fedora'
+    - name: Install libselinux-python package
+      yum: name=libselinux-python state=present
+      when: ansible_os_family == 'RedHat'
   roles:
     - ansible-role-ksplice
-
