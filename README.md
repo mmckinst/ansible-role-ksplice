@@ -2,6 +2,7 @@ ksplice
 =========
 
 [![Travis](https://img.shields.io/travis/mmckinst/ansible-role-ksplice.svg)](https://travis-ci.org/mmckinst/ansible-role-ksplice)
+[![Ansible Role](https://img.shields.io/ansible/role/6278.svg)](https://galaxy.ansible.com/detail#/role/6278)
 
 Install and manage [ksplice](http://ksplice.oracle.com/) for rebootless kernel upgrades.
 
