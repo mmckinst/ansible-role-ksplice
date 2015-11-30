@@ -1,0 +1,29 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Mark McKinstry
+  description: ksplice rebootless kernel updates
+  license: GPLv2
+  min_ansible_version: 1.3
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+    - name: Fedora
+      versions:
+        - 22
+    - name: Ubuntu
+      versions:
+        - precise
+        - trusty
+        - vivid
+        - wily
+    - name: Debian
+      versions:
+        - wheezy
+        - jessie
+  categories:
+  - system
+  

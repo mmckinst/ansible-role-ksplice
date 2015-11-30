@@ -1,7 +1,45 @@
+ksplice
+=========
+
 [![Travis](https://img.shields.io/travis/mmckinst/ansible-role-ksplice.svg)](https://travis-ci.org/mmckinst/ansible-role-ksplice)
 
+Install and manage [ksplice](http://ksplice.oracle.com/) for rebootless kernel upgrades.
+
+Requirements
+------------
+
+You need a license from ksplice for rebootless kernel upgrades to work.
+
+If you using this role on Fedora, you need to install yum.
+
+Role Variables
+--------------
+
+`ksplice_repo_prefix: http://www.ksplice.com`
+
+The repository to install uptrack from.
+
+`ksplice_key: set_this_variable_somewhere`
+
+Your ksplice license.
+
+Dependencies
+------------
+
+None
+
+Example Playbook
+----------------
+
+    - hosts: all
+      vars:
+	    ksplice_key: deadbeef
+      roles:
+        - { role: mmckinst.ksplice }
+
+
 License
----
+-------
 ```
 Copyright (C) 2015 Mark McKinstry
 
