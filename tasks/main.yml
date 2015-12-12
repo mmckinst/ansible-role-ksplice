@@ -38,7 +38,7 @@
 
 - name: Install cron job
   cron:
-    name: uptack
+    name: uptrack
     user: root
     special_time: hourly
     job: export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin && [ -x /usr/sbin/uptrack-upgrade ] && /usr/sbin/uptrack-upgrade --cron
