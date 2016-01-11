@@ -1,0 +1,35 @@
+---
+driver:
+  name: docker
+
+driver_config:
+  use_sudo: false
+
+provisioner:
+  name: ansible_playbook
+  hosts: localhost
+  ansible_verbose: true
+  idempotency_test: true
+
+platforms:
+  - name: centos-6
+  - name: centos-7
+#  - name: fedora-22
+#  - name: ubuntu-precise
+  - name: ubuntu-trusty
+  - name: ubuntu-vivid
+  - name: ubuntu-wily
+
+  # no ansible packages for debian. have to use omnibus installer that builds it
+  # from source
+  #
+  # https://github.com/neillturner/kitchen-ansible/issues/42
+  - name: debian-7
+    provisioner:
+      require_ansible_omnibus: true
+  - name: debian-8
+    provisioner:
+      require_ansible_omnibus: true
+
+suites:
+  - name: default
