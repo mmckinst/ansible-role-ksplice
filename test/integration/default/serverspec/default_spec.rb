@@ -1,4 +1,6 @@
-require 'spec_helper'
+require 'serverspec'
+
+set :backend, :exec
 
 if os[:family] == 'redhat' 
   describe yumrepo('ksplice-uptrack') do
