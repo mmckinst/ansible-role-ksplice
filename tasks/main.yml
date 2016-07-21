@@ -8,10 +8,6 @@
   apt_repository: repo="deb {{ ksplice_repo_prefix }}/apt/ {{ ansible_distribution_release }} ksplice"
   when: ansible_os_family == 'Debian'
 
-- name: Install uptrack package
-  apt: name=uptrack state=present
-  when: ansible_os_family == 'Debian'
-
 - name: Add ksplice rpm key
   rpm_key: key=https://ksplice.com/yum/RPM-GPG-KEY-ksplice
   when: ansible_os_family == 'RedHat'
@@ -23,8 +19,7 @@
   when: ansible_os_family == 'RedHat'
 
 - name: Install uptrack package
-  yum: name=uptrack state=present
-  when: ansible_os_family == 'RedHat'
+  package: name=uptrack state=present
 
 - name: Install confg file
   ini_file:
