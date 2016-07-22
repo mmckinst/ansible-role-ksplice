@@ -13,9 +13,12 @@
   when: ansible_os_family == 'RedHat'
 
 - name: Add ksplice yum repository
-  template:
-    src: ksplice-uptrack.repo.j2
-    dest: /etc/yum.repos.d/ksplice-uptrack.repo
+  yum_repository:
+    name: ksplice-uptrack
+    description: Ksplice Uptrack
+    baseurl: "{{ ksplice_repo_prefix }}/yum/uptrack/{{ ansible_distribution | lower | replace ('redhat', 'rhel') | replace ('oraclelinux', 'ol') }}/$releasever/$basearch/"
+    gpgcheck: yes
+    gpgkey: https://www.ksplice.com/yum/RPM-GPG-KEY-ksplice
   when: ansible_os_family == 'RedHat'
 
 - name: Install uptrack package
