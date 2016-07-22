@@ -19,8 +19,8 @@ galaxy_info:
       versions:
         - precise
         - trusty
-        - vivid
         - wily
+        - xenial
     - name: Debian
       versions:
         - wheezy

@@ -18,8 +18,8 @@ platforms:
   - name: fedora-24
 #  - name: ubuntu-precise
   - name: ubuntu-trusty
-  - name: ubuntu-vivid
   - name: ubuntu-wily
+  - name: ubuntu-xenial
 
   # no ansible packages for debian. have to use omnibus installer that builds it
   # from source
