@@ -11,7 +11,6 @@ Requirements
 
 You need a license from ksplice for rebootless kernel upgrades to work.
 
-If you using this role on Fedora, you need to install yum.
 
 Role Variables
 --------------
