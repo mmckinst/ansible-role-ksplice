@@ -1,7 +1,0 @@
-{% set repo = {'RedHat': 'rhel', 'OracleLinux': 'ol', 'Fedora': 'fedora'} %}
-[ksplice-uptrack]
-name=Ksplice Uptrack
-baseurl={{ ksplice_repo_prefix }}/yum/uptrack/{{ repo[ansible_distribution] | default('centos') }}/$releasever/$basearch/
-enabled=1
-gpgcheck=1
-gpgkey=https://www.ksplice.com/yum/RPM-GPG-KEY-ksplice
