@@ -14,7 +14,8 @@ provisioner:
 platforms:
   - name: centos-6
   - name: centos-7
-#  - name: fedora-22
+  - name: fedora-23
+  - name: fedora-24
 #  - name: ubuntu-precise
   - name: ubuntu-trusty
   - name: ubuntu-vivid
