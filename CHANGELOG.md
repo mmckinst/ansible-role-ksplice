@@ -1,4 +1,4 @@
-## 2.0.0-dev (unreleased)
+## 2.0.0
 - **Backwards Incompatible**: Fix typo in cron job name, `uptack` has been
   corrected to `uptrack`. You should remove the cron job named `uptack` when
   upgrading to 2.0.0, otherwise you'll have two cron jobs for ksplice running.
