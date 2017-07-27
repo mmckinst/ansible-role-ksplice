@@ -19,8 +19,9 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - trusty
-        - wily
         - xenial
+        - zesty
+        - artful
     - name: Debian
       versions:
         - wheezy
