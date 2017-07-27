@@ -14,8 +14,9 @@ provisioner:
 platforms:
   - name: centos-6
   - name: centos-7
-  - name: fedora-23
   - name: fedora-24
+  - name: fedora-25
+  - name: fedora-26
   - name: ubuntu-trusty
   - name: ubuntu-wily
   - name: ubuntu-xenial

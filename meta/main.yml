@@ -13,8 +13,9 @@ galaxy_info:
         - 7
     - name: Fedora
       versions:
-        - 23
         - 24
+        - 25
+        - 26
     - name: Ubuntu
       versions:
         - trusty
