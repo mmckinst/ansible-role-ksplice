@@ -31,6 +31,9 @@ platforms:
   - name: debian-8
     provisioner:
       require_ansible_omnibus: true
+  - name: debian-9
+    provisioner:
+      require_ansible_omnibus: true
 
 suites:
   - name: default
