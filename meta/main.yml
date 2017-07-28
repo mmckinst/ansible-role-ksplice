@@ -13,18 +13,20 @@ galaxy_info:
         - 7
     - name: Fedora
       versions:
-        - 23
         - 24
+        - 25
+        - 26
     - name: Ubuntu
       versions:
-        - precise
         - trusty
-        - wily
         - xenial
+        - zesty
+        - artful
     - name: Debian
       versions:
         - wheezy
         - jessie
+        - stretch
   categories:
   - system
   
